@@ -302,7 +302,7 @@
 
         // retrieving GeoJSON data from json file using jQuery Ajax
         $.ajax({
-          url: '/data/geo.json',              // url to get data
+          url: './data/geo.json',              // url to get data
           type: "POST",                       // request type (GET, POST)
           dataType: 'json',                   // retrieved data type (text, json)
           success: function(res) {            // success callback when retrieved data successfully, will add markers to map here
@@ -367,7 +367,7 @@
 
         // Retrieve products data
         $.ajax({
-          url: '/data/items.json',
+          url: './data/items.json',
           type: "POST",
           dataType: 'json',
           success: function(res) {
